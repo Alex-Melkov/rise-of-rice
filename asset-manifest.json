@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rise-of-rice/static/css/main.174cdc36.css",
-    "main.js": "/rise-of-rice/static/js/main.f2d9a840.js",
+    "main.js": "/rise-of-rice/static/js/main.f59437c0.js",
     "Rolls.css": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css",
     "Rolls.js": "/rise-of-rice/static/js/Rolls.f240154b.chunk.js",
     "Cart.css": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/slick.woff": "/rise-of-rice/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rise-of-rice/index.html",
     "main.174cdc36.css.map": "/rise-of-rice/static/css/main.174cdc36.css.map",
-    "main.f2d9a840.js.map": "/rise-of-rice/static/js/main.f2d9a840.js.map",
+    "main.f59437c0.js.map": "/rise-of-rice/static/js/main.f59437c0.js.map",
     "Rolls.efe94880.chunk.css.map": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css.map",
     "Rolls.f240154b.chunk.js.map": "/rise-of-rice/static/js/Rolls.f240154b.chunk.js.map",
     "Cart.0dd08874.chunk.css.map": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.174cdc36.css",
-    "static/js/main.f2d9a840.js"
+    "static/js/main.f59437c0.js"
   ]
 }
