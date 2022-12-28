@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rise-of-rice/static/css/main.3fc70de0.css",
-    "main.js": "/rise-of-rice/static/js/main.7ba78943.js",
+    "main.js": "/rise-of-rice/static/js/main.3d86955e.js",
     "Rolls.css": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css",
-    "Rolls.js": "/rise-of-rice/static/js/Rolls.da0bbf4c.chunk.js",
+    "Rolls.js": "/rise-of-rice/static/js/Rolls.617d58db.chunk.js",
     "Cart.css": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css",
-    "Cart.js": "/rise-of-rice/static/js/Cart.7018567e.chunk.js",
+    "Cart.js": "/rise-of-rice/static/js/Cart.c698a7cc.chunk.js",
     "FullRoll.css": "/rise-of-rice/static/css/FullRoll.f204b313.chunk.css",
-    "FullRoll.js": "/rise-of-rice/static/js/FullRoll.f4c14e66.chunk.js",
+    "FullRoll.js": "/rise-of-rice/static/js/FullRoll.b442e10c.chunk.js",
     "NotFound.css": "/rise-of-rice/static/css/NotFound.80211a80.chunk.css",
     "NotFound.js": "/rise-of-rice/static/js/NotFound.2b5102eb.chunk.js",
     "static/js/880.baafdfcf.chunk.js": "/rise-of-rice/static/js/880.baafdfcf.chunk.js",
@@ -17,19 +17,19 @@
     "static/media/slick.woff": "/rise-of-rice/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rise-of-rice/index.html",
     "main.3fc70de0.css.map": "/rise-of-rice/static/css/main.3fc70de0.css.map",
-    "main.7ba78943.js.map": "/rise-of-rice/static/js/main.7ba78943.js.map",
+    "main.3d86955e.js.map": "/rise-of-rice/static/js/main.3d86955e.js.map",
     "Rolls.efe94880.chunk.css.map": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css.map",
-    "Rolls.da0bbf4c.chunk.js.map": "/rise-of-rice/static/js/Rolls.da0bbf4c.chunk.js.map",
+    "Rolls.617d58db.chunk.js.map": "/rise-of-rice/static/js/Rolls.617d58db.chunk.js.map",
     "Cart.0dd08874.chunk.css.map": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css.map",
-    "Cart.7018567e.chunk.js.map": "/rise-of-rice/static/js/Cart.7018567e.chunk.js.map",
+    "Cart.c698a7cc.chunk.js.map": "/rise-of-rice/static/js/Cart.c698a7cc.chunk.js.map",
     "FullRoll.f204b313.chunk.css.map": "/rise-of-rice/static/css/FullRoll.f204b313.chunk.css.map",
-    "FullRoll.f4c14e66.chunk.js.map": "/rise-of-rice/static/js/FullRoll.f4c14e66.chunk.js.map",
+    "FullRoll.b442e10c.chunk.js.map": "/rise-of-rice/static/js/FullRoll.b442e10c.chunk.js.map",
     "NotFound.80211a80.chunk.css.map": "/rise-of-rice/static/css/NotFound.80211a80.chunk.css.map",
     "NotFound.2b5102eb.chunk.js.map": "/rise-of-rice/static/js/NotFound.2b5102eb.chunk.js.map",
     "880.baafdfcf.chunk.js.map": "/rise-of-rice/static/js/880.baafdfcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3fc70de0.css",
-    "static/js/main.7ba78943.js"
+    "static/js/main.3d86955e.js"
   ]
 }
