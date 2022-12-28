@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.wrapper{
+    border-top: 1px solid $gray-line;
+    padding: 20px 0;
+
+    .footerContainer{
+        width: $container-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+
+        .footerLogo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 44px;
+                height: 44px;
+                margin-right: 20px;
+            }
+    
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #7a7d7a;
+            }
+        }
+    
+        .footerSocial{
+            display: flex;
+            align-items: center;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+    
+            img:first-of-type{
+                margin-right: 10px;
+            }
+        }
+    
+    }
+}

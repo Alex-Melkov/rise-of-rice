@@ -1,0 +1,129 @@
+@import '../../scss/variables';
+
+.containerHome{
+    width: $container-width;
+    margin: 0 auto;
+
+    .sliderBlock{
+        margin-bottom: 50px;
+    }
+
+    .buttonMenuBlock{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .buttonGoRolls{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 60px;
+            background-color: $green;
+            border-radius: 30px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: all $duration ease-in-out;
+
+            @media (max-width: 550px) {
+                width: 200px;
+                height: 45px;
+                font-size: 14px;
+                line-height: 18px;
+              }
+
+             @media (max-width: 425px) {
+                 width: 160px;
+                 height: 40px;
+                 font-size: 12px;
+                 line-height: 16px;
+               }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                background-color: #4ee619;
+            }
+        }
+    }
+
+    .about{
+        display: flex;
+        .aboutText{
+            padding-right: 40px;
+
+            @media (max-width: 768px) {
+                padding: 0;
+               }
+
+            .textTitle{
+                margin-bottom: 40px;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 20px;
+                   }
+
+                h3{
+                    font-weight: 800;
+                    font-size: 48px;
+                    line-height: 59px;
+                    letter-spacing: .04em;
+                    text-transform: uppercase;
+                    color: #0e100e;
+                    margin-bottom: 20px;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                        line-height: 29px;
+                       }
+                }
+
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #939792;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                       }
+                }
+            }
+
+            .textContent{
+                
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #555555;
+                    margin: 15px 0;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin: 10px 0;
+                       }
+                }
+
+            }
+        }
+
+        .aboutImage{
+            img{
+                width: 370px;
+                height: 425px;
+
+                @media (max-width: 1024px) {
+                   display: none;   
+                  }
+            }
+        }
+    }
+}

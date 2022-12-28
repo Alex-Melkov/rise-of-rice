@@ -1,0 +1,337 @@
+@import '../../scss/variables';
+
+.header {
+  border-bottom: 1px solid $gray-line;
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &Logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+
+        @media (max-width: 768px) {
+          width: 60px;
+          height: 60px;
+          margin-right: 10px;
+        }
+
+        @media (max-width: 374px) {
+          width: 50px;
+          height: 50px;
+          margin-right: 7px;
+        }
+    }
+
+    h1 {
+      color: #181818;
+      font-size: 24px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+
+    p {
+      color: #7b7b7b;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+  }
+
+  &Cart {
+    .buttonCart {
+        display: flex;
+        align-items: center;
+        background-color: $green;
+        border-radius: 30px;
+        opacity: 0.85;
+        padding: 12px 25px;
+        text-align: center;
+        cursor: pointer;
+        transition: all $duration ease-in-out;
+        border: 1px solid $green;
+
+        @media (max-width: 768px) {
+          padding: 8px 15px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+
+        svg {
+            margin-right: 8px;
+            margin-bottom: 1px;
+
+            @media (max-width: 768px) {
+              width: 16px;
+              height: 16px;
+              margin-right: 6px;
+            }
+
+            @media (max-width: 374px) {
+              width: 14px;
+              height: 14px;
+              margin-right: 4px;
+            }
+          }
+
+        span {
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+
+            @media (max-width: 374px) {
+              font-size: 10px;
+            }
+        }
+
+        .buttonDelimiter {
+            width: 1px;
+            height: 25px;
+            background-color: rgba(255, 255, 255, 0.25);
+            margin-left: 14px;
+            margin-right: 14px;
+
+            @media (max-width: 768px) {
+              height: 20px;
+              margin-left: 8px;
+              margin-right: 8px;
+            }
+
+            @media (max-width: 374px) {
+              height: 18px;
+              margin-left: 6px;
+              margin-right: 6px;
+            }
+        }
+    }
+  }
+}
+
+.homePageHeader {
+  border-bottom: 1px solid $gray-line;
+  padding-top: 20px;
+
+  @media (max-width: 500px) {
+    padding: 20px 0;
+  }
+
+  &Container {
+    width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 500px) {
+      display: block;
+      position: relative;
+      height: 100px;
+    }
+  }
+
+  &Contacts{
+    @media (max-width: 500px) {
+      position: absolute;
+      left: 0;
+    }
+
+    .city{
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #0e100e;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media (max-width: 500px) {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .phone{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #0e100e;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .subtitle{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #939792;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  &Logo {
+    img {
+        width: 140px;
+        height: 140px;
+
+
+        @media (max-width: 768px) {
+          width: 100px;
+          height: 100px;
+        }
+
+        @media (max-width: 500px) {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+    }
+  }
+
+  &Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 500px) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .homePageButtonCart {
+        display: flex;
+        align-items: center;
+        background-color: $green;
+        border-radius: 30px;
+        opacity: 0.85;
+        padding: 12px 25px;
+        text-align: center;
+        cursor: pointer;
+        transition: all $duration ease-in-out;
+        border: 1px solid $green;
+
+        @media (max-width: 768px) {
+          padding: 8px 15px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+
+        svg {
+            margin-right: 8px;
+            margin-bottom: 1px;
+
+            @media (max-width: 768px) {
+              width: 16px;
+              height: 16px;
+              margin-right: 6px;
+            }
+
+            @media (max-width: 374px) {
+              width: 14px;
+              height: 14px;
+              margin-right: 4px;
+            }
+          }
+
+        span {
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+
+            @media (max-width: 374px) {
+              font-size: 10px;
+            }
+        }
+
+        .homePageButtonDelimiter {
+            width: 1px;
+            height: 25px;
+            background-color: rgba(255, 255, 255, 0.25);
+            margin-left: 14px;
+            margin-right: 14px;
+
+            @media (max-width: 768px) {
+              height: 20px;
+              margin-left: 8px;
+              margin-right: 8px;
+            }
+
+            @media (max-width: 374px) {
+              height: 18px;
+              margin-left: 6px;
+              margin-right: 6px;
+            }
+        }
+    }
+  }
+}

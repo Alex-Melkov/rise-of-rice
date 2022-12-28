@@ -1,0 +1,19 @@
+.sliderContainer{
+
+    .slider{
+        width: 100%;
+    
+        .sliderBlock{
+            cursor: grab;
+            
+            img{
+                width: 99%;
+                height: 99%;
+                border-radius: 30px;
+                padding: 1%;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        }
+    }
+}

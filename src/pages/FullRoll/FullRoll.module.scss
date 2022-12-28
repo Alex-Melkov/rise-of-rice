@@ -1,0 +1,282 @@
+@import '../../scss/variables';
+
+.container {
+    width: $container-width;
+    margin: 0 auto;
+
+    .containerRoll {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+        .imageBlock {
+            margin-right: 20px;
+
+            @media (max-width: 768px) {
+                margin-right: 0;
+                max-width: 500px;
+              }
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .description {
+                margin-bottom: 50px;
+                .title {
+                    font-weight: 800;
+                    font-size: 48px;
+                    line-height: 50px;
+                    letter-spacing: .04em;
+                    margin-bottom: 20px;
+
+                    @media (max-width: 425px) {
+                        font-size: 36px;
+                        line-height: 38px;
+                      }
+                }
+    
+                .weight {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 15px;
+                    margin-bottom: 10px;
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #7a7d7a;
+
+                        @media (max-width: 425px) {
+                            font-size: 15px;
+                            line-height: 15px;
+                            line-height: 20px;
+                          }
+                    }
+                    
+                    @media (max-width: 425px) {
+                        font-size: 14px;
+                        line-height: 14px;
+                      }
+                }
+    
+                .structure {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 15px;
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #7a7d7a;
+
+                        @media (max-width: 425px) {
+                            font-size: 15px;
+                            line-height: 15px;
+                            line-height: 20px;
+                          }
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 14px;
+                        line-height: 14px;
+                      }
+                }
+            }
+    
+            .purchase {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                .priceAndType {
+
+                    .rollType {
+                        margin-bottom: 20px;
+                        
+                        ul {
+                        display: flex;
+                        border: 1px solid #4ee619;
+                        border-radius: 12px;
+                        padding: 2px;
+                        width: max-content;
+                      
+                            li {
+                            padding: 8px;
+                            cursor: pointer;
+                            font-size: 14px;
+                            user-select: none;
+                            text-align: center;
+                            color: #555;
+                            font-weight: 700;
+                            letter-spacing: .01em;
+                            line-height: 1.2;
+                            padding: 7px 10px;
+                            border-radius: 9px;
+                            transition: 0.15s ease-in-out 0.12s;
+
+                            @media (max-width: 375px) {
+                                font-size: 12px;
+                                padding: 6px 9px;
+                              }
+                            
+                            &.active {
+                                color: #fff;
+                                background: #4ee619;
+                                }
+                            }
+                        }
+                    }
+        
+                    .price {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 39px;
+                        color: #0e100e;
+
+                        @media (max-width: 375px) {
+                            font-size: 28px;
+                            line-height: 32px;
+                          }
+                    }
+                }
+
+                .addProduct {
+                        display: flex;
+
+                        .addInCart {
+                            display: inline-block;
+                            font-size: 18px;
+                            line-height: 21px;
+                            font-weight: 600;
+                            background-color: $green;
+                            color: #FFFFFF;
+                            width: 160px;
+                            height: 50px;
+                            border-radius: 10px;
+                            cursor: pointer;
+
+                            svg {
+                                margin-right: 5px;
+                            }
+
+                            @media (max-width: 320px) {
+                                width: 145px;
+                                height: 40px;
+                            }
+                        }
+
+                        .buttonMinus {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 32px;
+                            height: 32px;
+                            padding: 0;
+                            margin-right: 10px;
+                            border: 2px solid $green;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            transition: all $duration ease-in-out;
+
+                            &:hover {
+                                background-color: $green;
+
+                                svg {
+                                path {
+                                    fill: #FFFFFF;
+                                }
+                                }
+                            }
+
+                            svg {
+                                path {
+                                fill: $green;
+                                }
+                            }
+
+                            svg {
+                            path:first-of-type {
+                                display: none;
+                            }
+                            }
+                        }
+
+                        .buttonPlus {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 32px;
+                            height: 32px;
+                            padding: 0;
+                            border: 2px solid $green;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            transition: all $duration ease-in-out;
+
+                            &:hover {
+                                background-color: $green;
+
+                                svg {
+                                path {
+                                    fill: #FFFFFF;
+                                }
+                                }
+                            }
+
+                            svg {
+                                path {
+                                fill: $green;
+                                }
+                            }
+                        }
+
+                        b {
+                            font-size: 22px;
+                            margin-right: 10px;
+                        }
+                }
+            }
+            .goBack {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 210px;
+                height: 55px;
+                background-color: #FFFFFF;
+                border: 1px solid #D3D3D3;
+                border-radius: 30px;
+                color: #CACACA;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                cursor: pointer;
+                transition: all $duration ease-in-out;
+
+                @media (max-width: 375px) {
+                    width: 180px;
+                    height: 50px;
+                  }
+
+                &:hover {
+                    background-color: rgb(32, 32, 32);
+                    border-color: rgb(32, 32, 32);
+                  }
+            }
+        }
+    }
+}

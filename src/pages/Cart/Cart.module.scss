@@ -1,0 +1,216 @@
+@import '../../scss/variables';
+
+.containerCart {
+    width: $container-width;
+    margin: 0 auto;
+  }
+  
+  .cart {
+    max-width: 820px;
+    margin: 40px auto;
+
+    &Top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .contentTitle {
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      margin: 0;
+
+      @media (max-width: 550px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 20px;
+      }
+  
+      svg {
+        position: relative;
+        top: -2px;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+
+        @media (max-width: 425px) {
+            width: 20px;
+            height: 20px;
+          }
+
+        path {
+          stroke: $black;
+          stroke-width: 1.9;
+        }
+      }
+    }
+  
+    &Clear {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background-color: #FFFFFF;
+  
+      span {
+        display: inline-block;
+        margin-left: 7px;
+        color: #b6b6b6;
+        font-size: 18px;
+
+        @media (max-width: 550px) {
+            font-size: 14px;
+          }
+
+        @media (max-width: 425px) {
+            margin-left: 3px;
+          }
+      }
+  
+      span,
+      svg,
+      path {
+        transition: all $duration ease-in-out;
+      }
+  
+      svg {
+
+        @media (max-width: 550px) {
+            width: 15px;
+            height: 15px;
+          }
+      }
+
+      &:hover {
+        svg {
+          path {
+            stroke: #5e5e5e;
+          }
+        }
+        span {
+          color: #5e5e5e;
+        }
+      }
+    }
+  
+    .contentItems {
+      display: block;
+    }
+
+    &Bottom {
+        margin: 50px 0;
+    
+        &Details {
+          display: flex;
+          justify-content: space-between;
+    
+          span {
+            font-size: 22px;
+
+            @media (max-width: 550px) {
+                font-size: 18px;
+              }
+
+            @media (max-width: 425px) {
+                font-size: 14px;
+              }
+    
+            &:last-of-type {
+              b {
+                color: #232323;
+              }
+            }
+          }
+        }
+    
+        &Buttons {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+    
+          .goBackBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 55px;
+            background-color: #FFFFFF;
+            border: 1px solid #D3D3D3;
+            border-radius: 30px;
+            color: #CACACA;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            cursor: pointer;
+            transition: all $duration ease-in-out;
+
+            @media (max-width: 550px) {
+                width: 170px;
+                height: 45px;
+                font-size: 12px;
+                line-height: 16px;
+              }
+
+            @media (max-width: 425px) {
+                width: 140px;
+                height: 40px;
+                font-size: 10px;
+                line-height: 14px;
+              }
+    
+            &:hover {
+              background-color: rgb(32, 32, 32);
+              border-color: rgb(32, 32, 32);
+            }
+    
+            svg {
+              margin-right: 12px;
+              path {
+                fill: transparent;
+                stroke-width: 2;
+              }
+            }
+          }
+    
+          .payBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 55px;
+            background-color: $green;
+            border-radius: 30px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            cursor: pointer;
+            transition: all $duration ease-in-out;
+
+            @media (max-width: 550px) {
+                width: 170px;
+                height: 45px;
+                font-size: 12px;
+                line-height: 16px;
+              }
+
+            @media (max-width: 425px) {
+                width: 140px;
+                height: 40px;
+                font-size: 10px;
+                line-height: 14px;
+              }
+
+            &:hover {
+                background-color: #96ff70;
+            }
+
+            &:active {
+                background-color: #4ee619;
+            }
+          }
+        }
+      }
+}

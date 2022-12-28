@@ -1,0 +1,212 @@
+@import '../../scss/variables';
+
+.wrapper {
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(64, 69, 64, 0.2);
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      padding: 5px;
+    }
+
+    .rollBlock {
+      text-align: center;
+
+        &Image {
+          width: 100%;
+        }
+      
+        &Title {
+          font-size: 18px;
+          font-weight: 800;
+          letter-spacing: 1%;
+          margin: 20px 0 10px 0;
+          height: 48px;
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+
+          @media (max-width: 375px) {
+            margin: 0;
+          }
+        }
+
+        &Description {
+          p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #939792;
+            height: 43px;
+            overflow: hidden;
+          }
+        }
+      
+        &Selector {
+          margin-top: 50px;
+
+          @media (max-width: 375px) {
+            margin-top: 30px;
+          }
+          
+          ul {
+            display: flex;
+            border: 1px solid #4ee619;
+            border-radius: 12px;
+            padding: 2px;
+            width: max-content;
+          
+                li {
+                padding: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                user-select: none;
+                text-align: center;
+                color: #555;
+                font-weight: 700;
+                letter-spacing: .01em;
+                line-height: 1.2;
+                padding: 7px 10px;
+                border-radius: 9px;
+                transition: 0.15s ease-in-out 0.12s;
+
+                @media (max-width: 375px) {
+                    font-size: 12px;
+                    padding: 6px 9px;
+                  }
+                
+                &.active {
+                    color: #fff;
+                    background: #4ee619;
+                    }
+                }
+            }
+        }
+      
+        &Bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          @media (max-width: 768px) {
+            margin-top: 10px;
+          }
+        }
+      
+        &Price {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 36px;
+
+          @media (max-width: 425px) {
+            font-size: 14px;
+          }
+        }
+
+        .addProduct {
+          display: flex;
+
+          .addInCart {
+              display: inline-block;
+              font-size: 18px;
+              line-height: 21px;
+              font-weight: 600;
+              background-color: $green;
+              color: #FFFFFF;
+              width: 160px;
+              height: 50px;
+              border-radius: 10px;
+              cursor: pointer;
+
+              svg {
+                  margin-right: 5px;
+              }
+
+              @media (max-width: 320px) {
+                  width: 145px;
+                  height: 40px;
+              }
+          }
+
+          .buttonMinus {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 32px;
+              height: 32px;
+              padding: 0;
+              margin-right: 10px;
+              border: 2px solid $green;
+              background-color: #fff;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: all $duration ease-in-out;
+
+              &:hover {
+                  background-color: $green;
+
+                  svg {
+                  path {
+                      fill: #FFFFFF;
+                  }
+                  }
+              }
+
+              svg {
+                  path {
+                  fill: $green;
+                  }
+              }
+
+              svg {
+              path:first-of-type {
+                  display: none;
+              }
+              }
+          }
+
+          .buttonPlus {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 32px;
+              height: 32px;
+              padding: 0;
+              border: 2px solid $green;
+              background-color: #fff;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: all $duration ease-in-out;
+
+              &:hover {
+                  background-color: $green;
+
+                  svg {
+                  path {
+                      fill: #FFFFFF;
+                  }
+                  }
+              }
+
+              svg {
+                  path {
+                  fill: $green;
+                  }
+              }
+          }
+
+          b {
+              font-size: 22px;
+              margin-right: 10px;
+          }
+        }
+    }
+}

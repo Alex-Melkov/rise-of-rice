@@ -1,0 +1,61 @@
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { CartItemType, ICartSliceState } from "./types";
+
+const initialState: ICartSliceState = {
+    totalPrice: 0,
+    items: [],
+  };
+
+const cartSlice = createSlice({
+    name: 'cart',
+    initialState: initialState,
+    reducers: {
+      addItem(state, action: PayloadAction<CartItemType>) {
+        let findItem = state.items.find((obj) => {
+          return obj.id === action.payload.id && obj.type === action.payload.type;
+        });
+  
+        if (findItem) {
+          findItem.count++;
+        } else {
+          state.items.push({
+            ...action.payload,
+            count: 1,
+          });
+        }
+        state.totalPrice = state.items.reduce((sum, obj) => {
+          return obj.price * obj.count + sum;
+        }, 0);
+      },
+      minusItem(state, action: PayloadAction<CartItemType>) {
+        let findItem = state.items.find((obj) => {
+          return obj.id === action.payload.id && obj.type === action.payload.type;
+        });
+  
+        if (findItem) {
+          findItem.count--;
+          state.totalPrice -= findItem.price;
+        }
+      },
+      removeItem(state, action: PayloadAction<CartItemType>) {
+        let findItem = state.items.find((obj) => {
+          return obj.id === action.payload.id && obj.type === action.payload.type;
+        });
+  
+        state.items = state.items.filter((obj) => {
+          return obj.id !== action.payload.id && obj.type === action.payload.type;
+        });
+        if (findItem) {
+          state.totalPrice -= findItem.price * findItem.count;
+        }
+      },
+      clearItems(state) {
+        state.items = [];
+        state.totalPrice = 0;
+      },
+    },
+  });
+
+export const { addItem, minusItem, removeItem, clearItems } = cartSlice.actions;
+
+export default cartSlice.reducer;

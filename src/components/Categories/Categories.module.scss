@@ -1,0 +1,42 @@
+@import '../../scss/variables';
+
+.categories {
+
+    @media (max-width: 500px) {
+        width: 100%;
+        overflow: auto;
+      }
+    ul {
+      display: flex;
+
+      li {
+        background-color: #f9f9f9;
+        padding: 13px 30px;
+        border-radius: 30px;
+        margin-right: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.1s ease-in-out;
+        user-select: none;
+
+        @media (max-width: 768px) {
+            padding: 8px 20px;
+            font-size: 14px;
+          }
+
+        &:hover {
+          background-color: #e9e9e9;
+        }
+  
+        &:active {
+          background-color: #bebdbd;
+        }
+  
+        &.active {
+          background-color: #282828;
+          color: #fff;
+        }
+      }
+    }
+  }
+  

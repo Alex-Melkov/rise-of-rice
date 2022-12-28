@@ -1,0 +1,57 @@
+@import '../../scss/variables';
+
+.paginate {
+   li {
+    display: inline-block;
+
+    a {
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid $green;
+        border-radius: 30px;
+        margin-right: 10px;
+        font-weight: 800;
+        cursor: pointer;
+        user-select: none;
+
+        @media (max-width: 425px) {
+            width: 30px;
+            height: 30px;
+            line-height: 10px;
+            font-size: 14px;
+          }
+
+        &:hover {
+            background-color: $green;
+            color: #fff;
+        }
+
+    }
+    }
+    :global {
+        .selected {
+            a {
+                background-color: #d1fcc1;
+            }
+        }
+       }
+    
+    :global {
+        .disabled {
+            a {
+                cursor: default;
+    
+            &:hover {
+                background-color: #fff;
+                color: black;
+            }
+
+            }
+        }
+    }
+
+}
