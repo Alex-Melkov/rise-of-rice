@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/rise-of-rice/static/css/main.3fc70de0.css",
-    "main.js": "/rise-of-rice/static/js/main.aee7c330.js",
+    "main.js": "/rise-of-rice/static/js/main.1a16b18b.js",
     "Rolls.css": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css",
     "Rolls.js": "/rise-of-rice/static/js/Rolls.da0bbf4c.chunk.js",
     "Cart.css": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css",
-    "Cart.js": "/rise-of-rice/static/js/Cart.c698a7cc.chunk.js",
+    "Cart.js": "/rise-of-rice/static/js/Cart.e8c39484.chunk.js",
     "FullRoll.css": "/rise-of-rice/static/css/FullRoll.f204b313.chunk.css",
     "FullRoll.js": "/rise-of-rice/static/js/FullRoll.f4c14e66.chunk.js",
     "NotFound.css": "/rise-of-rice/static/css/NotFound.80211a80.chunk.css",
@@ -17,11 +17,11 @@
     "static/media/slick.woff": "/rise-of-rice/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rise-of-rice/index.html",
     "main.3fc70de0.css.map": "/rise-of-rice/static/css/main.3fc70de0.css.map",
-    "main.aee7c330.js.map": "/rise-of-rice/static/js/main.aee7c330.js.map",
+    "main.1a16b18b.js.map": "/rise-of-rice/static/js/main.1a16b18b.js.map",
     "Rolls.efe94880.chunk.css.map": "/rise-of-rice/static/css/Rolls.efe94880.chunk.css.map",
     "Rolls.da0bbf4c.chunk.js.map": "/rise-of-rice/static/js/Rolls.da0bbf4c.chunk.js.map",
     "Cart.0dd08874.chunk.css.map": "/rise-of-rice/static/css/Cart.0dd08874.chunk.css.map",
-    "Cart.c698a7cc.chunk.js.map": "/rise-of-rice/static/js/Cart.c698a7cc.chunk.js.map",
+    "Cart.e8c39484.chunk.js.map": "/rise-of-rice/static/js/Cart.e8c39484.chunk.js.map",
     "FullRoll.f204b313.chunk.css.map": "/rise-of-rice/static/css/FullRoll.f204b313.chunk.css.map",
     "FullRoll.f4c14e66.chunk.js.map": "/rise-of-rice/static/js/FullRoll.f4c14e66.chunk.js.map",
     "NotFound.80211a80.chunk.css.map": "/rise-of-rice/static/css/NotFound.80211a80.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.3fc70de0.css",
-    "static/js/main.aee7c330.js"
+    "static/js/main.1a16b18b.js"
   ]
 }
