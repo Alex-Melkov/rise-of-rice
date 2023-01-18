@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           </div>
           <Link to="/">
             <div className={styles.homePageHeaderLogo}>
-              <img src="/img/logo.svg" alt="Roll logo" />
+              <img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="Roll logo" />
             </div>
           </Link>
           <div className={styles.homePageHeaderCart}>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
       <div className={styles.container}>
         <Link to="/">
           <div className={styles.headerLogo}>
-            <img width="38" src="/img/logo.svg" alt="Roll logo" />
+            <img width="38" src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="Roll logo" />
             <div>
               <h1>Rise of Rice</h1>
               <p>Кто попробует, тот полюбит!</p>

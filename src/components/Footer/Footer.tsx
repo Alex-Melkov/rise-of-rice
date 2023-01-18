@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.footerContainer}>
-                <Link to="/">
+                <Link to="">
                     <div className={styles.footerLogo}>
-                        <img src="/img/logo.svg" alt="footer-logo" />
+                        <img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="footer-logo" />
                         <p>© 2022 “Rise of Rice”<br/>
                         Кто попробует, тот полюбит!
                         </p>
@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
                 </Link>
 
                 <div className={styles.footerSocial}>
-                    <img src="/img/social-vk.svg" alt="vk"></img>
-                    <img src="/img/social-ok.svg" alt="ok"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/social-vk.svg'} alt="vk"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/social-ok.svg'} alt="ok"></img>
                 </div>
             </div>
         </div>

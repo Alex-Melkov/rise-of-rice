@@ -13,7 +13,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className={styles.buttonMenuBlock}>
-                <Link to="/rolls">
+                <Link to="rolls">
                     <button className={styles.buttonGoRolls}>Посмотреть меню</button>
                 </Link>
             </div>
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.aboutImage}>
-                    <img src="/img/about.png" alt="about" />
+                    <img src="img/about.png" alt="about" />
                 </div>
             </div>
         </div>

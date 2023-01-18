@@ -61,7 +61,7 @@ const RollBlock: React.FC<RollBlockProps> = ({ id, title, structure, price, imag
   return (
     <div className={styles.wrapper}>
       <div className={styles.rollBlock}>
-        <Link to={`/rolls/roll/${id}`}>
+        <Link to={`roll/${id}`}>
           <img className={styles.rollBlockImage} src={imageUrl} alt="Roll" />
           <h4 className={styles.rollBlockTitle}>{title}</h4>
         </Link>

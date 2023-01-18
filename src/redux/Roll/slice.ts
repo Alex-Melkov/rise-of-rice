@@ -9,20 +9,21 @@ const initialState: IRollSliceState = {
   };
   
 const rollSlice = createSlice({
-    name: 'roll',
-    initialState: initialState,
-    reducers: {},
-    extraReducers: (builder) => {
-      builder.addCase(fetchRoll.pending, (state) => {
+  name: 'roll',
+  initialState: initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchRoll.pending, (state) => {
         state.status = Status.LOADING;
         state.items = [];
-      }),
-      builder.addCase(fetchRoll.fulfilled, (state, action) => {
+      })
+      .addCase(fetchRoll.fulfilled, (state, action) => {
         state.items = action.payload.items;
         state.countRolls = action.payload.count;
-        state.status = Status.SUCCESS;
-      }),
-      builder.addCase(fetchRoll.rejected, (state) => {
+        state.status = Status.SUCCESS; 
+      })
+      .addCase(fetchRoll.rejected, (state) => {
         state.status = Status.ERROR;
         state.items = [];
       })
