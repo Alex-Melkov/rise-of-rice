@@ -2,7 +2,7 @@
 
 ---
 
-![alt text](./rise-of-rice.gif.gif)
+![alt text](./rise-of-rice.gif)
 
 ---
 
