@@ -19,7 +19,7 @@ const FullRoll: React.FC = () => {
     title: string;
     weight: number[];
     structure: string;
-    price: number[]
+    price: number[];
   }>();
 
   let [activeType, setActiveType] = React.useState<number>(0);
@@ -28,6 +28,24 @@ const FullRoll: React.FC = () => {
   let navigate = useNavigate();
   let dispatch = useDispatch();
 
+  let cartItemId = useSelector((state: RootState) =>
+    state.cartReducer.items.find((obj) => obj.id === id),
+  );
+
+  React.useEffect(() => {
+    function setActiveTypeRoll() {
+      if (cartItemId) {     
+        if (cartItemId.type === 'стандарт') {       
+          setTimeout(() => setActiveType(1), 0)
+        } else if (cartItemId.type === 'мини') {
+          setTimeout(() => setActiveType(0), 0)
+        }
+      }
+    }
+  setActiveTypeRoll()
+  // eslint-disable-next-line
+  }, [])
+  
   React.useEffect(() => {
     async function fetchRoll() {
       try {
@@ -57,7 +75,8 @@ const FullRoll: React.FC = () => {
         price: roll.price[activeType],
         imageUrl: roll.imageUrl,
         type: typeNames[activeType],
-        count: 0
+        count: 0,
+        unicId: id + activeType
       };
     dispatch(addItem(item));
     }
@@ -72,13 +91,13 @@ const FullRoll: React.FC = () => {
         price: roll.price[activeType],
         imageUrl: roll.imageUrl,
         type: typeNames[activeType],
-        count: 0
+        count: 0,
+        unicId: id + activeType
       };
-    if (addedCount === 1) {
-      dispatch(removeItem(item));
-    } else {
       dispatch(minusItem(item));
-    }
+      if (addedCount === 1) {
+        dispatch(removeItem(item));
+      }
     }
   };
 

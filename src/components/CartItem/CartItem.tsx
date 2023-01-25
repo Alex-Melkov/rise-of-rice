@@ -12,9 +12,10 @@ type CartItemProps = {
   price: number;
   count: number;
   imageUrl: string;
+  unicId: string;
 }
 
-const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imageUrl }) => {
+const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imageUrl, unicId }) => {
   let dispatch = useDispatch();
 
   let onClickPlus = () => {
@@ -25,7 +26,8 @@ const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imag
         type,
         price,
         count,
-        imageUrl
+        imageUrl,
+        unicId
       }),
     );
   };
@@ -37,7 +39,8 @@ const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imag
       type,
       price,
       count,
-      imageUrl
+      imageUrl,
+      unicId
     }));
   };
 
@@ -48,7 +51,8 @@ const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imag
       type,
       price,
       count,
-      imageUrl
+      imageUrl,
+      unicId
     }));
   };
 
@@ -65,7 +69,7 @@ const CartItem: React.FC<CartItemProps> = ({ id, title, type, price, count, imag
         <button
           onClick={onClickMinus}
           className={styles.cartItemCountMinus}
-          disabled={count === 1 ? true : false}>
+          disabled={count <= 1 ? true : false}>
           <svg
             width="10"
             height="10"

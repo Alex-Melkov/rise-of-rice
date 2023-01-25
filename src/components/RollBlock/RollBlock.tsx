@@ -27,7 +27,25 @@ const RollBlock: React.FC<RollBlockProps> = ({ id, title, structure, price, imag
     state.cartReducer.items.find((obj) => obj.id === id && obj.type === typeNames[activeType]),
   );
 
+  let cartItemId = useSelector((state: RootState) =>
+    state.cartReducer.items.find((obj) => obj.id === id),
+  );
+
   let addedCount = cartItem ? cartItem.count : 0;
+  
+  React.useEffect(() => {
+    function setActiveTypeRoll() {
+      if (cartItemId) {     
+        if (cartItemId.type === 'стандарт') {       
+          setTimeout(() => setActiveType(1), 0)
+        } else if (cartItemId.type === 'мини') {
+          setTimeout(() => setActiveType(0), 0)
+        }
+      }
+    }
+  setActiveTypeRoll()
+  // eslint-disable-next-line
+  }, [])
 
   let onClickPlusItem = () => {
     let item: CartItemType = {
@@ -36,7 +54,8 @@ const RollBlock: React.FC<RollBlockProps> = ({ id, title, structure, price, imag
       price: price[activeType],
       imageUrl,
       type: typeNames[activeType],
-      count: 0
+      count: 0,
+      unicId: id + activeType
     };
     dispatch(addItem(item));
   };
@@ -48,13 +67,12 @@ const RollBlock: React.FC<RollBlockProps> = ({ id, title, structure, price, imag
       price: price[activeType],
       imageUrl,
       type: typeNames[activeType],
-      count: 0
+      count: 0,
+      unicId: id + activeType
     };
-    dispatch(addItem(item));
+    dispatch(minusItem(item));
     if (addedCount === 1) {
       dispatch(removeItem(item));
-    } else {
-      dispatch(minusItem(item));
     }
   };
 
